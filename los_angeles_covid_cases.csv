@@ -795,3 +795,10 @@ date,geoid,county,state,cases,cases_avg,cases_avg_per_100k,deaths,deaths_avg,dea
 2022-03-29,USA-06037,Los Angeles,California,552,796.86,7.94,7,16.86,0.17
 2022-03-30,USA-06037,Los Angeles,California,1051,825.43,8.22,29,17.14,0.17
 2022-03-31,USA-06037,Los Angeles,California,500,772.0,7.69,14,15.43,0.15
+2022-04-01,USA-06037,Los Angeles,California,1111,746.57,7.44,14,15.29,0.15
+2022-04-02,USA-06037,Los Angeles,California,0,746.57,7.44,0,15.29,0.15
+2022-04-03,USA-06037,Los Angeles,California,0,746.57,7.44,0,15.29,0.15
+2022-04-04,USA-06037,Los Angeles,California,2288,786.0,7.83,27,13.0,0.13
+2022-04-05,USA-06037,Los Angeles,California,825,825.0,8.22,12,13.71,0.14
+2022-04-06,USA-06037,Los Angeles,California,1012,819.43,8.16,17,12.0,0.12
+2022-04-07,USA-06037,Los Angeles,California,1038,896.29,8.93,15,12.14,0.12
