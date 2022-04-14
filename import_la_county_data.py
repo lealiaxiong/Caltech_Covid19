@@ -35,12 +35,15 @@ logger.setLevel(logging.DEBUG)
 
 for year in url_dict:
     try:
+        print(f'Starting download of {year} data...')
         logger.info(f'Starting download of {year} data...')
         url = url_dict[year]
         output = f'us-counties-{year}.csv'
         urllib.request.urlretrieve(url, output)
+        print(f'{year} data saved.')
         logger.info(f'{year} data saved.')
     except Exception as e:
+        print(f'Error downloading {year} data file: {str(e)}')
         logger.error(f'Error downloading {year} data file: {str(e)}')
         
 # Load data

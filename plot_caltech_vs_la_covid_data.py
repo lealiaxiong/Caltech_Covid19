@@ -335,7 +335,7 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         y_axis_label='cases',
         x_axis_type='datetime',
         toolbar_location='above',
-        tools=['hover', 'wheel_zoom', 'reset', 'xwheel_pan', 'box_zoom'],
+        tools=['pan', 'hover', 'wheel_zoom', 'reset', 'xwheel_pan', 'box_zoom'],
         active_scroll='xwheel_pan',
         tooltips="@date_tooltip: @$name $name",
     )
@@ -449,4 +449,14 @@ if __name__ == '__main__':
         p2, 
         filename='covid_cases_la_caltech_daily_90_days.html', 
         title='Caltech Daily Covid Cases'
+    )
+    
+    # Save pngs
+    bokeh.io.export_png(
+        p1, 
+        filename='covid_cases_la_caltech_weekly_whole_pandemic.png', 
+    )
+    bokeh.io.export_png(
+        p2, 
+        filename='covid_cases_la_caltech_daily_90_days.png', 
     )
