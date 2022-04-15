@@ -1,4 +1,5 @@
 # caltech_covid19
+
 Tracking cases in the Caltech community that have been reported to Caltech Student Wellness Services.
 
 Data transcribed manually from: https://together.caltech.edu/cases-testing-and-tracing/case-log
