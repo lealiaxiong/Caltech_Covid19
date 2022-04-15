@@ -18,10 +18,10 @@ import numpy as np
 import pandas as pd
 import itertools
 
+import bokeh.resources
 import bokeh.plotting
 import bokeh.io
-import holoviews as hv
-hv.extension('bokeh')
+import bokeh.embed
 
 # WHO declares pandemic
 start_date = datetime.date(2020, 3, 11)
@@ -176,7 +176,7 @@ def plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la):
     max_la_cases = df_la['cases_avg'].max()
 
     p = bokeh.plotting.figure(
-        frame_width=1200,
+        frame_width=800,
         frame_height=300,
         x_axis_label='date',
     #     y_axis_label='cases',
@@ -220,7 +220,7 @@ def plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la):
     )
 
     # Set legend outside (hacky)
-    p.add_layout(bokeh.models.Legend(), 'left')
+    p.add_layout(bokeh.models.Legend(), 'right')
 
     # Add stacked bars for Caltech weekly total cases
     bars = p.vbar_stack(
@@ -437,26 +437,48 @@ if __name__ == '__main__':
     
     # Generate plots
     p1 = plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la)
+    p1_filename = 'covid_cases_la_caltech_weekly_whole_pandemic'
+    
     p2 = plot_daily_90_day_view(df, df_total_rolling, df_la)
+    p2_filename = 'covid_cases_la_caltech_daily_90_days'
+    
+    plots = [p1, p2]
+    filenames = [p1_filename, p2_filename]
+    
+    # Save embedding objects
+    js_files = [f'{filename}.js' for filename in filenames]
+    tag_files = [f'{filename}_tag.html' for filename in filenames]
+    
+    for i, plot in enumerate(plots):
+        js_file = js_files[i]
+        tag_file = tag_files[i]
+        
+        js, tag = bokeh.embed.autoload_static(plot, bokeh.resources.CDN, js_file)
+        
+        with open(js_file, 'w') as text_file:
+            text_file.write(js)
+        with open(tag_file, 'w') as text_file:
+            text_file.write(tag)
+    
     
     # Save html objects
     bokeh.io.save(
         p1, 
-        filename='covid_cases_la_caltech_weekly_whole_pandemic.html', 
+        filename=f'{p1_filename}.html', 
         title='Caltech Weekly Covid Cases'
     )
     bokeh.io.save(
         p2, 
-        filename='covid_cases_la_caltech_daily_90_days.html', 
+        filename=f'{p2_filename}.html', 
         title='Caltech Daily Covid Cases'
     )
     
     # Save pngs
     bokeh.io.export_png(
         p1, 
-        filename='covid_cases_la_caltech_weekly_whole_pandemic.png', 
+        filename=f'{p1_filename}.png', 
     )
     bokeh.io.export_png(
         p2, 
-        filename='covid_cases_la_caltech_daily_90_days.png', 
+        filename=f'{p2_filename}.png', 
     )

@@ -1,41 +1,36 @@
-## Welcome to GitHub Pages
+---
+layout: default
+---
 
+<html lang="en">
+     <body>
+         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+         <script> 
+             $(function(){
+               $("#weeklyTotal").load("covid_cases_la_caltech_weekly_whole_pandemic_tag.html"); 
+             });
+         </script> 
+         
+         Total weekly cases at Caltech
 
+         <div id="weeklyTotal"></div>
+         
+         <p>
+             The y-axes were chosen such that the maximum weekly total of Caltech cases, 
+             7-day rolling average of Caltech cases, and 7-day rolling average of LA County cases appear 
+             as the same height.
+         </p>
+         
+         <p>
+             In the winter 2020/2021 surge and summer 2021 Delta surge, Caltech was either not 
+             as affected as in the winter 2021/2022 Omicron surge, or we weren't testing as much 
+             as we are currently.
+         </p>
+         
+         <p>
+             In April 2022, Caltech is experiencing a surge that exceeds the trend seen in the general 
+             LA County population, likely driven by students returning from spring break.
+         </p>
 
-You can use the [editor on GitHub](https://github.com/lealiaxiong/caltech_covid19/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-[Test](test.html)
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lealiaxiong/caltech_covid19/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    </body>
+</html>
