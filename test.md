@@ -23,7 +23,7 @@ layout: default
         </script> 
         <script> 
              $(function(){
-               $("#dailyCases").load("covid_cases_la_caltech_daily_90_days.html"); 
+               $("#dailyCases").load("covid_cases_la_caltech_daily_90_days_tag.html"); 
              });
         </script>
         
