@@ -9,6 +9,7 @@ layout: default
     <body>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <h1> Hi! If you've arrived here, you're in the wrong place. </h1>
+        <h2> Things on this page may be broken :( </h2>
         <p> Return to <a href="https://lealiaxiong.github.io/caltech_covid19/"> main page </a>.
              
         <div class="switch-button">
