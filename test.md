@@ -12,7 +12,7 @@ layout: default
         <p> Return to <a href="https://lealiaxiong.github.io/caltech_covid19/"> main page </a>.
              
         <div class="switch-button">
-            <input class="switch-button-checkbox" type="checkbox"> id="whichPlot" onclick="switchPlot(this)"</input>
+            <input class="switch-button-checkbox" type="checkbox"> id="whichPlot" onclick="switchPlot(this)"/>
             <label class="switch-button-label" for=""><span class="switch-button-label-span">weekly cases</span></label>
         </div>         
         
