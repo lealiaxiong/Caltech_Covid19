@@ -57,7 +57,7 @@ layout: default
          </p>
         
         <p>
-            To see the daily case counts for the last 90 days, please use the toggle. Place the mouse cursor over the x-axis and scroll to view other dates.
+            To see the daily case counts for the last 90 days, please use the toggle. Place the mouse cursor over the plot and scroll to view other dates.
          
          <h2>Data sources</h2>
          

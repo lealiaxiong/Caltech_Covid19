@@ -329,7 +329,7 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
     max_la_cases = df_la['cases_avg'].max()
 
     p = bokeh.plotting.figure(
-        frame_width=600,
+        frame_width=800,
         frame_height=300,
         x_axis_label='date',
         y_axis_label='cases',
@@ -359,7 +359,7 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         'right',
     )
 
-    p.add_layout(bokeh.models.Legend(), 'left')
+    p.add_layout(bokeh.models.Legend(), 'right')
 
     # Add stacked bars for new cases each day
     bars = p.vbar_stack(
