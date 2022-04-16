@@ -23,7 +23,7 @@
   letter-spacing: 1px;
   color: #FFFFFF;
   position: relative;
-  padding-right: 120px;
+  padding-right: 150px;
   position: relative;
 }
 .switch-button:before {
@@ -32,7 +32,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 120px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
   z-index: 2;
 }
 .switch-button-checkbox:checked + .switch-button-label:before {
-  transform: translateX(120px);
+  transform: translateX(150px);
   transition: transform 300ms linear;
 }
 .switch-button-checkbox + .switch-button-label {
