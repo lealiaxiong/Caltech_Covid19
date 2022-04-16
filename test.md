@@ -3,10 +3,9 @@ layout: default
 ---
 
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        
     <body>
+        <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <h1> Hi! If you've arrived here, you're in the wrong place. </h1>
         <h2> Things on this page may be broken :( </h2>
