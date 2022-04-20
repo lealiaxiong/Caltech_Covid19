@@ -11,10 +11,10 @@ import logging
 import os
 
 # Download data
-
+# If running for the first time on a new computer, uncomment 2020 and 2021 lines
 url_dict = {
-    2020: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2020.csv',
-    2021: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2021.csv',
+#     2020: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2020.csv',
+#     2021: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2021.csv',
     2022: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2022.csv',
 }
 
