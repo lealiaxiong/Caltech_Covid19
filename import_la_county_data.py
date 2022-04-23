@@ -11,6 +11,7 @@ import logging
 import os
 
 # Download data
+years = [2020, 2021, 2022]
 
 url_dict = {
     2020: 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2020.csv',
@@ -33,7 +34,7 @@ logging.basicConfig(
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
-for year in url_dict:
+for year in years:
     try:
         print(f'Starting download of {year} data...')
         logger.info(f'Starting download of {year} data...')
@@ -48,7 +49,7 @@ for year in url_dict:
         
 # Load data
 
-df_dict = {year: pd.read_csv(f'us-counties-{year}.csv') for year in url_dict}
+df_dict = {year: pd.read_csv(f'us-counties-{year}.csv') for year in years}
 
 # Extract LA County data
 la_df_dict = {year: df.loc[(df['county'] == 'Los Angeles') & (df['state'] == 'California')] for year, df in df_dict.items()}
