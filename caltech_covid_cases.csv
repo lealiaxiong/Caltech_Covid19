@@ -18,11 +18,9 @@ date,case,affiliation
 8/19/20,1,campus employees
 8/26/20,1,campus employees
 9/14/20,1,campus employees
-9/25/20,1,undergraduate students
 10/8/20,1,campus employees
 10/22/20,1,campus employees
 10/25/20,3,CCC employees
-11/1/20,1,graduate students
 11/9/20,1,CCC employees
 11/9/20,1,campus employees
 11/12/20,1,campus employees
@@ -107,7 +105,7 @@ date,case,affiliation
 5/12/21,1,campus employees
 6/30/21,1,campus employees
 7/13/21,1,postdocs
-7/15/21,1,campus employees
+7/15/21,1,off-campus employees
 7/19/21,1,graduate students
 7/20/21,1,campus employees
 7/26/21,1,campus employees
@@ -116,7 +114,7 @@ date,case,affiliation
 7/30/21,1,off-campus employees
 8/2/21,2,campus employees
 8/2/21,1,off-campus employees
-8/3/21,2,campus employees
+8/3/21,1,campus employees
 8/4/21,2,campus employees
 8/4/21,1,off-campus employees
 8/6/21,1,campus employees
@@ -158,6 +156,7 @@ date,case,affiliation
 10/12/21,1,graduate students
 10/13/21,1,campus employees
 10/14/21,1,off-campus employees
+10/15/21,1,undergraduate students
 10/20/21,1,campus employees
 10/21/21,1,campus employees
 10/21/21,1,graduate students

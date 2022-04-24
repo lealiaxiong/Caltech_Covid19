@@ -58,12 +58,12 @@ color_ordered = [
 cit_avg_color = '#f2cc44'
 la_color = '#a369d6'
 
-def load_caltech_data(start_date=start_date):
+def load_caltech_data(start_date=start_date, data_source='caltech_covid_cases.csv'):
     """
     Loads Caltech data.
     Returns DataFrame of Caltech cases, NumPy array of dates,
     NumPy array of Caltech affiliations."""
-    df = pd.read_csv('caltech_covid_cases.csv').astype({'date': 'datetime64[D]'})
+    df = pd.read_csv(data_source).astype({'date': 'datetime64[D]'})
     
     # Date of last update
     current_date = df.iloc[-1]['date'].date()

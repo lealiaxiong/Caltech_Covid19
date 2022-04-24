@@ -46,7 +46,8 @@ layout: default
 
 <p>
     In April 2022, Caltech is experiencing a surge that exceeds the trend seen in the general 
-    LA County population, likely driven by students returning from spring break.
+    LA County population, perhaps initially driven by students returning from spring break. 
+    Students now make up the majority of daily cases.
 </p>
 
 <p>
@@ -56,14 +57,13 @@ layout: default
 
 <p>
   Caltech data transcribed manually from: https://together.caltech.edu/cases-testing-and-tracing/case-log.
-  Omitted cases where people lived out of state and had never accessed campus. 
-  Date indicates the date that a case was posted on the case log (not the date the people tested positive). CCC indicates
-  Caltech Childcare Center.
+  Date indicates the date that a case was posted on the case log (not the date of a positive test). CCC indicates
+  Children's Center at Caltech.
 </p>
 
 <p>
     LA County data sourced from NY Times Github. Data with rolling averages can be found at: 
-    https://github.com/nytimes/covid-19-data/tree/master/rolling-averages (as of 2022-04-15). 
+    https://github.com/nytimes/covid-19-data/tree/master/rolling-averages. 
 </p>
 <p>
     The data is split between .csv files by year. Raw files are found at:
