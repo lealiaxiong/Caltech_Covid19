@@ -340,10 +340,10 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         x_axis_type='datetime',
         toolbar_location='above',
         tools=['pan', 'hover', 'wheel_zoom', 'reset', 'xpan', 'box_zoom'],
+        active_drag='xpan',
         tooltips="@date_tooltip: @$name $name",
         sizing_mode="stretch_width",
     )
-    p.toolbar.active_drag = None
 
     # Set multiple y-ranges and add to plot
     p.y_range = bokeh.models.Range1d(start=-max_cases/40, end=max_cases*1.15)
