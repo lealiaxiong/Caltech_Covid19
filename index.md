@@ -51,14 +51,14 @@ layout: default
 </p>
 
 <p>
-   To see the daily case counts for the last 90 days, please use the toggle. Place the mouse cursor over the plot and scroll to view other dates.
+   To see the daily case counts for the last 90 days, please use the toggle. Drag to view other dates.
 
 <h2>Data sources</h2>
 
 <p>
   Caltech data transcribed manually from: https://together.caltech.edu/cases-testing-and-tracing/case-log.
   Date indicates the date that a case was posted on the case log (not the date of a positive test). CCC indicates
-  Children's Center at Caltech.
+  Children's Center at Caltech. Omitted cases where the person had not been on campus in the last month.
 </p>
 
 <p>

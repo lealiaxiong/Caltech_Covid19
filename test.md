@@ -33,8 +33,8 @@ layout: default
     }
 </script>
 
-<div id="weeklyTotal" style="display: block"></div>
-<div id="dailyCases" style="display: none"></div>
+<div id="weeklyTotal" style="display:block;max-width:100%;height:auto;"></div>
+<div id="dailyCases" style="display:none;max-width:100%;height:auto;"></div>
 
 <p>
      In the weekly cases view, the y-axes were chosen such that the maximum weekly total of Caltech cases, 

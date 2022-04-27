@@ -1,12 +1,13 @@
 """
 Plot Caltech Covid-19 data and compare with LA County data.
 
-Caltech dataset first transcribed from 
+Caltech dataset `caltech_covid_cases.csv` first transcribed from 
 https://together.caltech.edu/cases-testing-and-tracing/case-log 
-on 2021-08-04. Omitted cases where people lived out of state 
-and/or had not accessed campus since March 2020. 
+on 2021-08-04. Excluded cases where people lived out of state 
+and/or had not accessed campus in one month 
+(included in `caltech_covid_cases_excluded.csv`. 
 Date indicates the date that a case was posted on the case log 
-(not the date the people tested positive). Dataset is updated 
+(not the date of a positive test). Dataset is updated 
 manually.
 
 LA County data sourced from the New York Times Github at
@@ -182,9 +183,12 @@ def plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la):
     #     y_axis_label='cases',
         x_axis_type='datetime',
         toolbar_location='above',
-        tools=['hover', 'wheel_zoom', 'reset', 'pan', 'box_zoom'],
+        tools=['hover', 'xpan', 'wheel_zoom', 'reset', 'pan', 'box_zoom'],
         tooltips="week of @date_tooltip: @$name $name",
+        sizing_mode="stretch_width",
     )
+    
+    p.toolbar.active_drag = None
 
     # Set multiple y-ranges and add to plot
     p.y_range = bokeh.models.Range1d(start=-max_weekly_cases/40, end=max_weekly_cases*1.15)
@@ -220,7 +224,7 @@ def plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la):
     )
 
     # Set legend outside (hacky)
-    p.add_layout(bokeh.models.Legend(), 'right')
+    p.add_layout(bokeh.models.Legend(), 'left')
 
     # Add stacked bars for Caltech weekly total cases
     bars = p.vbar_stack(
@@ -335,10 +339,11 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         y_axis_label='cases',
         x_axis_type='datetime',
         toolbar_location='above',
-        tools=['pan', 'hover', 'wheel_zoom', 'reset', 'xwheel_pan', 'box_zoom'],
-        active_scroll='xwheel_pan',
+        tools=['pan', 'hover', 'wheel_zoom', 'reset', 'xpan', 'box_zoom'],
         tooltips="@date_tooltip: @$name $name",
+        sizing_mode="stretch_width",
     )
+    p.toolbar.active_drag = None
 
     # Set multiple y-ranges and add to plot
     p.y_range = bokeh.models.Range1d(start=-max_cases/40, end=max_cases*1.15)
@@ -359,7 +364,7 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         'right',
     )
 
-    p.add_layout(bokeh.models.Legend(), 'right')
+    p.add_layout(bokeh.models.Legend(), 'left')
 
     # Add stacked bars for new cases each day
     bars = p.vbar_stack(
