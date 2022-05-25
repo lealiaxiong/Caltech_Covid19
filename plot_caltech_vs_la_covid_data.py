@@ -177,15 +177,15 @@ def plot_weekly_whole_pandemic(df_weekly_sum, df_total_rolling, df_la):
     max_la_cases = df_la['cases_avg'].max()
 
     p = bokeh.plotting.figure(
-        frame_width=800,
+        sizing_mode='stretch_width',
         frame_height=300,
+        max_width=1150,
         x_axis_label='date',
     #     y_axis_label='cases',
         x_axis_type='datetime',
         toolbar_location='above',
         tools=['hover', 'xpan', 'wheel_zoom', 'reset', 'pan', 'box_zoom'],
         tooltips="week of @date_tooltip: @$name $name",
-        sizing_mode="stretch_width",
     )
     
     p.toolbar.active_drag = None
@@ -333,8 +333,9 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
     max_la_cases = df_la['cases_avg'].max()
 
     p = bokeh.plotting.figure(
-        frame_width=800,
+        sizing_mode='stretch_width',
         frame_height=300,
+        max_width=1150,
         x_axis_label='date',
         y_axis_label='cases',
         x_axis_type='datetime',
@@ -342,7 +343,6 @@ def plot_daily_90_day_view(df, df_total_rolling, df_la):
         tools=['pan', 'hover', 'wheel_zoom', 'reset', 'xpan', 'box_zoom'],
         active_drag='xpan',
         tooltips="@date_tooltip: @$name $name",
-        sizing_mode="stretch_width",
     )
 
     # Set multiple y-ranges and add to plot
