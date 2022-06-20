@@ -292,16 +292,15 @@ jQuery(document).ready( function($) {
 <div class="wp-container-6 wp-block-group gapless-group">
 <div class="wp-container-5 wp-block-group alignfull site-header site-header-linear" style="padding-top:var(--wp--custom--gap--vertical);padding-bottom:var(--wp--custom--gap--vertical);">
 <div class="wp-container-2 wp-block-group site-brand">
-
-
-<div class="wp-container-1 wp-block-group site-words-stack-small"><h1 class="wp-block-site-title"><a href="https://lealiaxiong.github.io" rel="home"  aria-current="page">Lealia Xiong</a></h1>
-
-<p style="font-size: var(--wp--custom--font-sizes--x-small);" class="wp-block-site-tagline">Data Storyteller | Adaptable Collaborator | Synthetic Biologist | Rapid Prototyper</p></div>
+	<div class="wp-container-1 wp-block-group site-words-stack-small">
+		<h1 class="wp-block-site-title"><a href="https://lealiaxiong.github.io" rel="home"  aria-current="page">Lealia Xiong</a></h1>
+		<p style="font-size: var(--wp--custom--font-sizes--x-small);" class="wp-block-site-tagline">Data Storyteller | Adaptable Collaborator | Synthetic Biologist | Rapid Prototyper</p>
+	</div>
 </div>
 
 
 <nav class="wp-container-4 is-responsive items-justified-right blockbase-responsive-navigation-linear wp-block-navigation" aria-label=""><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-3"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5" /><rect x="4" y="15" width="16" height="1.5" /></svg></button>
-			<div class="wp-block-navigation__responsive-container  " style="" id="modal-3">
+			<div class="wp-block-navigation__responsive-container" id="modal-3">
 				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close>
 					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
 							<button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
@@ -314,6 +313,14 @@ jQuery(document).ready( function($) {
 </div>
 </header>
 
+<div class="wp-container-1 items-justified-center">
+	<p>
+		<a href="#caltech-tracker">Caltech COVID-19 tracker</a> | 
+		<a href="#compare-with-la">How does Caltech compare with LA County?</a> | 
+		<a href="#data-sources">Data sources</a> |
+		<a href="#data-tools">Data tools</a>
+	</p>
+</div>
 
 <div class="wp-container-9">
 
@@ -321,8 +328,9 @@ jQuery(document).ready( function($) {
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     
     <div class="wp-container-7 wp-block-group">
-        <h1 style="margin-bottom:calc(2 * var(--wp--style--block-gap));;" class="has-text-align-left wp-block-post-title">Caltech COVID-19 Tracker</h1>
-        
+        <section id="caltech-tracker">
+			<h1 style="margin-bottom:calc(2 * var(--wp--style--block-gap));;" class="has-text-align-left wp-block-post-title">Caltech COVID-19 Tracker</h1>
+		</section>
     </div>
 
     <div class="switch-button">
@@ -355,36 +363,115 @@ jQuery(document).ready( function($) {
 <div class="wp-container-1" id="dailyCases" style="display:none;margin:auto"></div>
 
 <div class="wp-container-9">
-    <p>
-        In the weekly cases view, the y-axes were chosen such that the maximum weekly total of Caltech cases, 
-        7-day rolling average of Caltech cases, and 7-day rolling average of LA County cases appear 
-        as the same height.
-    </p>
     
     <p>
-        Based on this view, in the winter 2020/2021 surge and summer 2021 Delta surge, Caltech was either not 
-        as affected as in the winter 2021/2022 Omicron surge, or we weren't testing as much 
-        as we are currently.
-    </p>
-    
-    <p>
-        In April 2022, Caltech experienced a surge that the trend seen in the general 
-        LA County population, perhaps initially driven by students returning from spring break. 
-        Students made up the majority of daily cases.
-    </p>
+       <i>
+		To see the daily case counts for the last 90 days, please use the toggle. Drag to view other dates.
+	   </i>
+	</p>
 
 	<p>
-		In May 2022, employee cases increased, matching the trend seen in the general 
-		LA County population. The Graduate Student Council Formal on 2022-05-20 resulted in a 
-		large spike in graduate student cases in the week of 2022-05-22. 
-
-		In the week of 2022-05-29, we experienced a large spike in undergraduate student cases associated with a house trip.
+		The World Health Organization declared a global pandemic due to COVID-19 on 
+		<a href="https://pubmed.ncbi.nlm.nih.gov/32191675/">11 March 2020</a>. 
+		On 16 March 2020, Caltech officially closed, with undergrads not returning to campus after 
+		spring break and graduate students, staff, and faculty staying home. 
+		After 3 months at home, Caltech laboratories reopened on 8 June 2020 
+		with modified capacity and safety protocols, and 
+		Caltech has been gradually returning to full capacity since then.
 	</p>
-    
-    <p>
-       To see the daily case counts for the last 90 days, please use the toggle. Drag to view other dates.
-    
-    <h3>Data sources</h3>
+
+	<p>
+		Events correlating with increases in COVID-19 cases:
+		<ul>
+			<li>2022-03-17 – 2022-03-25: Spring break</li>
+			<li>2022-05-20: Graduate Student Council Formal</li>
+			<li>2022-05-27: Undergraduate social trip</li>
+		</ul>
+
+	</p>
+
+	<script>
+		function showHide() {
+		var x = document.getElementById("notable-dates");
+		if (x.style.display === "none") {
+		  x.style.display = "block";
+		} else {
+		  x.style.display = "none";
+		}
+	  }
+	</script>	 
+
+	<div onclick="showHide()" class="wp-container-7 wp-block-buttons">
+		<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link" style="border-radius:13px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;" target="_blank" rel="noreferrer noopener">Show other notable dates</a></div>
+	</div>
+
+	<div id="notable-dates" style="display:none">
+		<ul>
+			<li>2020-03-16: Campus closes</li>
+			<li>2020-06-08: Reopening begins</li>
+			<li>2020-11-30: Pilot surveillance testing program launches</li>
+			<li>2021-01-05: Mandatory surveillance testing begins</li>
+			<li>2021-03-01: All Caltech employees eligible for COVID-19 vaccine</li>
+			<li>2021-06-01: Mandatory surveillance testing ends for fully vaccinated individuals</li>
+			<li>2021-06-14: Undergraduate summer research on campus begins</li>
+			<li>2021-06-21: Indoor face covering requirement on campus lifted</li>
+			<li>2021-07-16: Indoor face covering requirement on campus reinstated</li>
+			<li>2021-08-30: Opt-in surveillance testing for fully vaccinated individuals begins</li>
+			<li>2021-09-07: Resumption of on-site work for employees</li>
+			<li>2021-09-27: Resumption of in-person instruction with mandatory masking</li>
+			<li>2021-10-15: All students and employees must be fully vaccinated</li>
+			<li>2022-01-15: All students must receive a booster shot</li>
+			<li>2022-01-31: All employees must receive a booster shot if eligible</li>
+			<li>2022-03-14: Optional masking outside of instructional spaces begins</li>
+			<li>2022-04-21: Universal indoor masking on campus resumes</li>
+			<li>2022-05-06: Weekend of undergraduate interhouse parties</li>
+
+		</ul>
+	</div>
+	<section id="compare-with-la">
+		<h2>How does Caltech compare with LA County?</h2>
+	</section>
+	</div>
+
+    <script> 
+		$(function(){
+		  $("#clustering").load("covid_cases_cluster_by_ratio_tag.html"); 
+		});
+   	</script> 
+   	<div class="wp-container-1" id="clustering" style="display:block;margin:auto;"></div>
+   
+   	<div class="wp-container-9">  
+   	<p>
+		<i>To highlight points on one plot and see the corresponding points on the other, 
+			please use the box select or lasso select tool.</i>
+  	 </p>  
+   	<p>
+		Caltech does not report the total community population or campus density, 
+		so we cannot compare case rates directly with the surrounding community, Los Angeles County.
+   	</p>
+
+   	<p>
+		Instead, we can use unsupervised machine learning to find patterns. 
+		Using a variational Gaussian mixture model with a Dirichlet process prior,
+		 we detect 4 groups of dates, corresponding to different ratios of the Caltech 
+		 daily average number of cases to the LA County daily average number of cases. 
+		 <b>As of June 2022, we have been in the highest ratio cluster since spring break.</b>
+   	</p>
+
+	<p>
+		If the Caltech population exactly mirrored the greater community in terms of behavior (level of 
+		socializing and masking, going to stores/concerts/etc.) and testing, we would expect a strong 
+		correlation between Caltech cases and LA County cases, with a slope equal to the ratio the total 
+		number of Caltech community members to the total LA County population. However, this is not 
+		the case. It is unclear from the available data whether the different ratios arise from different 
+		rates of transmission to and between Caltech community members compared with LA County 
+		residents, and/or from a high level of surveillance testing (many students and employees test 
+		twice per week) detecting cases among asymptomatic Caltech community members.
+	</p>
+
+	<section id="data-sources">
+    	<h3>Data sources</h3>
+	</section>	
     
     <p>
       Caltech data transcribed manually from the 
@@ -405,6 +492,31 @@ jQuery(document).ready( function($) {
            <a href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2022.csv">2022</a>.
 	</p>
 
+	<section id="data-tools">
+		<h3>Data tools</h3>
+	</section>
+
+	<p>
+		All data analysis and visualization performed in Python.
+	</p>
+	<p>
+		<b>Analysis</b>
+	</p>
+	<ul>
+		<li>NumPy</li>
+		<li>Pandas</li>
+		<li>scikit-learn</li>
+		<li>SciPy</li>
+	</ul>
+	<p>
+		<b>Visualization</b>
+	</p>
+	<ul>
+		<li>Bokeh</li>
+		<li>HoloViews</li>
+		<li>Colorcet</li>
+	</ul>
+
 	<div class="wp-container-7 wp-block-buttons">
 		<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link" href="https://github.com/lealiaxiong/caltech_covid19" style="border-radius:13px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;" target="_blank" rel="noreferrer noopener">View on GitHub</a></div>
 	</div>
@@ -412,280 +524,12 @@ jQuery(document).ready( function($) {
 
 </div>
 
-
-
-
-
 <div class="site-footer-container wp-block-template-part">
 <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-	
 
 
 <div style="height:120px" aria-hidden="true" class="wp-block-spacer"></div>
-</div></div>
-<!-- wpcom_wp_footer -->
-
-		<style id="skip-link-styles">
-		.skip-link.screen-reader-text {
-			border: 0;
-			clip: rect(1px,1px,1px,1px);
-			clip-path: inset(50%);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute !important;
-			width: 1px;
-			word-wrap: normal !important;
-		}
-
-		.skip-link.screen-reader-text:focus {
-			background-color: #eee;
-			clip: auto !important;
-			clip-path: none;
-			color: #444;
-			display: block;
-			font-size: 1em;
-			height: auto;
-			left: 5px;
-			line-height: normal;
-			padding: 15px 23px 14px;
-			text-decoration: none;
-			top: 5px;
-			width: auto;
-			z-index: 100000;
-		}
-	</style>
-		<script>
-	( function() {
-		var skipLinkTarget = document.querySelector( 'main' ),
-			sibling,
-			skipLinkTargetID,
-			skipLink;
-
-		// Early exit if a skip-link target can't be located.
-		if ( ! skipLinkTarget ) {
-			return;
-		}
-
-		// Get the site wrapper.
-		// The skip-link will be injected in the beginning of it.
-		sibling = document.querySelector( '.wp-site-blocks' );
-
-		// Early exit if the root element was not found.
-		if ( ! sibling ) {
-			return;
-		}
-
-		// Get the skip-link target's ID, and generate one if it doesn't exist.
-		skipLinkTargetID = skipLinkTarget.id;
-		if ( ! skipLinkTargetID ) {
-			skipLinkTargetID = 'wp--skip-link--target';
-			skipLinkTarget.id = skipLinkTargetID;
-		}
-
-		// Create the skip link.
-		skipLink = document.createElement( 'a' );
-		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
-		skipLink.href = '#' + skipLinkTargetID;
-		skipLink.innerHTML = 'Skip to content';
-
-		// Inject the skip link.
-		sibling.parentElement.insertBefore( skipLink, sibling );
-	}() );
-	</script>
-		<script type="text/javascript">
-	/* <![CDATA[ */
-		jQuery(document).ready( function($) {
-			function doFollowingHover() {
-				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
-
-				$('#wp-admin-bar-follow > a').bind( 'mouseover.unfollow', function() {
-
-					$(this).html( "Unfollow" ).parent( 'li' ).addClass( 'unfollow' );
-				});
-				$('#wp-admin-bar-follow > a').bind( 'mouseout.unfollow', function() {
-					$(this).html( "Following" ).parent( 'li' ).removeClass( 'unfollow' );
-				});
-			}
-							doFollowingHover();
-			
-			$('#wp-admin-bar-follow > a').click( function( e ) {
-				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
-
-				e.preventDefault();
-
-				var link = $( this ), li = $( '#wp-admin-bar-follow' ), timeout = 0;
-
-				if ( li.hasClass( 'subscribed' ) ) {
-					li.removeClass( 'subscribed' ).removeClass( 'unfollow' );
-					link.html( "Follow" );
-
-					$('body').append( $( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble' );
-
-					var action = 'ab_unsubscribe_from_blog';
-				} else {
-					li.addClass( 'subscribed' ).removeClass( 'unfollow' );
-					link.html( "Following" );
-
-						var left = 131 - link.width();
-						li.append( $( 'div.wpcom-bubble' ).css( { left: '-' + left + 'px' } ) );
-						$( 'div.bubble-txt', 'div.wpcom-bubble' ).html( "New posts from this blog will now appear in \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/wordpress.com\/\u0022\u003Eyour reader\u003C\/a\u003E. You can manage email alerts from your \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/wordpress.com\/following\/edit\/\u0022\u003Esubscriptions page\u003C\/a\u003E." );
-
-						$( 'div.wpcom-bubble.action-bubble' ).addClass( 'fadein' );
-
-						setTimeout( function() {
-							$('body').on( 'click.bubble touchstart.bubble', function(e) {
-								if ( !$(e.target).hasClass('wpcom-bubble') && !$(e.target).parents( 'div.wpcom-bubble' ).length )
-									hideBubble();
-							});
-							setTimeout( hideBubble, 15000 );
-						}, 500 );
-
-					var action = 'ab_subscribe_to_blog';
-					$('#wp-admin-bar-follow > a').bind( 'mouseout.shift', function() {
-						doFollowingHover();
-						$(this).unbind( '.shift' );
-					});
-				}
-
-				var nonce = link.attr( 'href' ).split( '_wpnonce=' );
-				nonce = nonce[1];
-
-				$.post( "https:\/\/lealiaxiong.github.io\/wp-admin\/admin-ajax.php", {
-					'action': action,
-					'_wpnonce': nonce,
-					'source': 'admin_bar',
-					'blog_id': 204266621				});
-			});
-		});
-	/* ]]> */
-	</script>
-            <script data-ampdevmode>
-				( () => {
-					if ( 'amp-wizard-completion-preview' !== window.name ) {
-						return;
-					}
-
-					/** @type {HTMLStyleElement} */
-					const style = document.createElement( 'style' );
-					style.setAttribute( 'type', 'text/css' );
-					style.appendChild( document.createTextNode( 'html { margin-top: 0 !important; } #wpadminbar { display: none !important; }' ) );
-					document.head.appendChild( style );
-
-					document.addEventListener( 'DOMContentLoaded', function() {
-						const adminBar = document.getElementById( 'wpadminbar' );
-						if ( adminBar ) {
-							document.body.classList.remove( 'admin-bar' );
-							adminBar.remove();
-						}
-					});
-				} )();
-			</script>
-			<script src='//0.gravatar.com/js/gprofiles.js?ver=202217z' id='grofiles-cards-js'></script>
-<script id='wpgroho-js-extra'>
-var WPGroHo = {"my_hash":"de5b7f4448c147579d8949596f4136b8"};
-</script>
-<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240h'></script>
-
-	<script>
-		// Initialize and attach hovercards to all gravatars
-		( function() {
-			function init() {
-				if ( typeof Gravatar === 'undefined' ) {
-					return;
-				}
-
-				if ( typeof Gravatar.init !== 'function' ) {
-					return;
-				}
-
-				Gravatar.profile_cb = function ( hash, id ) {
-					WPGroHo.syncProfileData( hash, id );
-				};
-
-				Gravatar.my_hash = WPGroHo.my_hash;
-				Gravatar.init( 'body', '#wp-admin-bar-my-account' );
-			}
-
-			if ( document.readyState !== 'loading' ) {
-				init();
-			} else {
-				document.addEventListener( 'DOMContentLoaded', init );
-			}
-		} )();
-	</script>
-
-		<div style="display:none">
-	<div class="grofile-hash-map-de5b7f4448c147579d8949596f4136b8">
-	</div>
-	
-	
-<script>
-window.addEventListener( "load", function( event ) {
-	var link = document.createElement( "link" );
-	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20210915";
-	link.type = "text/css";
-	link.rel = "stylesheet";
-	document.head.appendChild( link );
-
-	var script = document.createElement( "script" );
-	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20220329";
-	script.defer = true;
-	document.body.appendChild( script );
-} );
-</script>
-
-	<script id='thickbox-js-extra'>
-var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/s0.wp.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
-</script>
-<script id='jetpack-carousel-js-extra'>
-var jetpackSwiperLibraryPath = {"url":"\/wp-content\/mu-plugins\/carousel\/swiper-bundle.js"};
-var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"1","lang":"en","ajaxurl":"https:\/\/lealiaxiong.github.io\/wp-admin\/admin-ajax.php","nonce":"e8da41199f","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/lealiaxiong.github.io\/wp-login.php?redirect_to=https%3A%2F%2Flealiaxiong.github.io%2F","blog_id":"204266621","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=204266621&v=wpcom&tz=-7&user=1&user_id=218828008&subd=lealiaxiong","is_public":"1"};
-</script>
-<script id='comment-like-js-extra'>
-var comment_like_text = {"loading":"Loading...","swipeUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/comment-likes\/js\/lib\/swipe.js?ver=20131008"};
-</script>
-<script id='tos-report-form-js-extra'>
-var wpcom_tos_report_form = {"ajaxurl":"\/wp-admin\/admin-ajax.php","isLoggedoutUser":"","post_ID":"6","current_url":"https:\/\/lealiaxiong.github.io","report_this_content":"Report this content"};
-</script>
-<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??-eJyNT+0OgjAMfCHLFInGH8ZnGaPKBluXfSCP78CASgjxX9u7692xpwVBJqAJTHlWYScF2j5TfscSJI1oY4V+wEItRVNSPw9rpJo6dHL8B8pnWpo1Fq8SACV334Qpho5g2/iQxjPBHUWPLVMYLBcNTIcNzfw74YI0fLw2fEjrIXErm3fAn8OGMJAHh5ZcgDs5vdz/iqm5D+jSBMGljlt2U30Yqy3WpLvp6+FUXIp9np+P6gVL+LF1'></script>
-<script type="text/javascript">
-// <![CDATA[
-(function() {
-try{
-  if ( window.external &&'msIsSiteMode' in window.external) {
-    if (window.external.msIsSiteMode()) {
-      var jl = document.createElement('script');
-      jl.type='text/javascript';
-      jl.async=true;
-      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(jl, s);
-    }
-  }
-}catch(e){}
-})();
-// ]]>
-</script><script>
-if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
-
-	wpcom_mobile_user_agent_info.init();
-	var mobileStatsQueryString = "";
-	
-	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
-		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
-	
-	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
-		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
-	
-	if( wpcom_mobile_user_agent_info.isIPad() )
-		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
-
-	if( "" != mobileStatsQueryString ) {
-		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
-	}
-	
-}
-</script></body>
+</div>
+</div>
+</body>
 </html>
