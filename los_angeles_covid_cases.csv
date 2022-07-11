@@ -893,3 +893,6 @@ date,geoid,county,state,cases,cases_avg,cases_avg_per_100k,deaths,deaths_avg,dea
 2022-07-05,USA-06037,Los Angeles,California,2921,5381.29,53.6,10,7.86,0.08
 2022-07-06,USA-06037,Los Angeles,California,4834,5143.71,51.24,14,8.57,0.09
 2022-07-07,USA-06037,Los Angeles,California,5320,5091.0,50.71,12,9.0,0.09
+2022-07-08,USA-06037,Los Angeles,California,6342,4961.86,49.43,16,9.86,0.1
+2022-07-09,USA-06037,Los Angeles,California,0,4961.86,49.43,0,9.86,0.1
+2022-07-10,USA-06037,Los Angeles,California,0,4961.86,49.43,0,9.86,0.1
