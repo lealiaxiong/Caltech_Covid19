@@ -193,7 +193,7 @@ def clustering_by_ratio(df_all):
     gmm = sklearn.mixture.BayesianGaussianMixture(
         n_components=12, 
         covariance_type='full',
-        random_state=100
+        random_state=42
     ).fit(X_scaled)
     
     labels = gmm.predict(X_scaled)
