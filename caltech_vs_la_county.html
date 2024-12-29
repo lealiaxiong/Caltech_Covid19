@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name='robots' content='max-image-preview:large' />
+	<title>Caltech vs. LA County COVID-19 Cases</title>
+
+	<!--JQuery (for Bokeh plots)-->
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+	<link rel='stylesheet' id='style'
+		href='https://cdn.jsdelivr.net/gh/lealiaxiong/lealiaxiong.github.io@main/style.css' type='text/css'
+		media='all' />
+
+	<!--Nav bar for small screens-->
+	<script type='text/javascript'
+		src='https://cdn.jsdelivr.net/gh/lealiaxiong/lealiaxiong.github.io@main/navbar_mobile.js'></script>
+
+	<link rel="canonical" href="https://lealiaxiong.github.io/caltech_covid19/caltech_vs_la_county" />
+
+	<!-- Open Graph Tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title"
+		content="Lealia Xiong &#8211;&nbsp;Caltech COVID-19 Cases &#8211;&nbsp;versus LA County" />
+	<meta property="og:description" content="Data / Science / Startups" />
+	<meta property="og:url" content="https://lealiaxiong.github.io/caltech_covid19/caltech_vs_la_county" />
+	<meta property="og:site_name" content="Lealia Xiong" />
+	<meta property="og:image" content="assets/caltech_vs_la.png" />
+	<meta property="og:image:width" content="1340" />
+	<meta property="og:image:height" content="836" />
+	<meta property="og:image:alt" content="" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="article:publisher" content="https://www.linkedin.com/in/lealiaxiong" />
+	<meta name="twitter:text:title"
+		content="Lealia Xiong &#8211;&nbsp;Caltech COVID-19 Cases &#8211;&nbsp;versus LA County" />
+	<meta name="twitter:image" content="assets/caltech_vs_la.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- End Open Graph Tags -->
+</head>
+
+<body>
+	<div>
+		<!--Header and navigation-->
+		<div id="navbar"></div>
+
+		<script>
+			fetch('https://cdn.jsdelivr.net/gh/lealiaxiong/lealiaxiong.github.io@main/navbar.html')
+				.then(response => response.text())
+				.then(data => document.getElementById('navbar').innerHTML = data);
+		</script>
+
+		<main>
+			<div class="wp-container-9">
+
+				<section id="compare-with-la">
+					<h1>How do Caltech COVID-19 cases compare with LA County?</h1>
+				</section>
+
+				<p>
+					<i>
+						This page used to update almost daily until I graduated from Caltech at the end of 2022.
+					</i>
+				</p>
+
+				<script>
+					$(function () {
+						$("#clustering").load("covid_cases_cluster_by_ratio_tag.html");
+					});
+				</script>
+
+				<div id="clustering" style="display: flex; justify-content: center; align-items: center;"></div>
+				<p>
+					<i>To highlight points on one plot and see the corresponding points on the other,
+						please use the box select or lasso select tool.</i>
+				</p>
+				<p>
+					Caltech does not report the total community population or campus density,
+					so we cannot compare case rates directly with the surrounding community, Los Angeles County.
+				</p>
+
+				<p>
+					Instead, we can use unsupervised machine learning to find patterns.
+					Using a variational Gaussian mixture model with a Dirichlet process prior,
+					we detect 4 groups of dates, corresponding to different ratios of the Caltech
+					daily average number of cases to the LA County daily average number of cases.
+					From spring break through mid-July 2022, we were consistently in the highest ratio cluster.
+					Ahead of Labor Day weekend 2022, Caltech and LA County cases are trending downward, as is the
+					Caltech/LA County case ratio.
+				</p>
+
+				<p>
+					If the Caltech population exactly mirrored the greater community in terms of behavior (level of
+					socializing and masking, going to stores/concerts/etc.) and testing, we would expect a strong
+					correlation between Caltech cases and LA County cases, with a slope equal to the ratio the total
+					number of Caltech community members to the total LA County population. However, this is not
+					the case. It is unclear from the available data whether the different ratios arise from different
+					rates of transmission to and between Caltech community members compared with LA County
+					residents, and/or from a high level of surveillance testing (many students and employees test
+					twice per week) detecting cases among asymptomatic Caltech community members.
+				</p>
+
+				<section id="data-sources">
+					<h3>Data sources</h3>
+				</section>
+
+				<p>
+					Caltech data transcribed manually from the
+					<a href="https://together.caltech.edu/cases-testing-and-tracing/case-log">Caltech Case Log</a>.
+					Date indicates the date that a case was posted on the case log (not the date of a positive test).
+					CCC indicates
+					Children's Center at Caltech. Omitted cases where the person had not been on campus in the last
+					month.
+				</p>
+
+				<p>
+					LA County data with rolling averages sourced from the
+					<a href="https://www.nytimes.com/interactive/2021/us/covid-cases.html">NY Times</a>
+					<a href="https://github.com/nytimes/covid-19-data/tree/master/rolling-averages">Github</a>.
+				</p>
+				<p>
+					The data is split between .csv files by year. Raw files:
+					<a
+						href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2020.csv">2020</a>
+					/
+					<a
+						href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2021.csv">2021</a>
+					/
+					<a
+						href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-2022.csv">2022</a>.
+				</p>
+
+				<section id="data-tools">
+					<h3>Data tools</h3>
+				</section>
+
+				<p>
+					All data analysis and visualization performed in Python.
+				</p>
+				<table style="border-spacing:50px 5px;border-collapse:separate">
+					<tr>
+						<td><b>Analysis</b></td>
+						<td><b>Visualization</b></td>
+					</tr>
+					<tr>
+						<td><a href="https://numpy.org/">NumPy</a></td>
+						<td><a href="https://docs.bokeh.org/en/latest/">Bokeh</a< /td>
+					</tr>
+					<tr>
+						<td><a href="https://pandas.pydata.org/">Pandas</a></td>
+						<td><a href="https://holoviews.org/">HoloViews</a< /td>
+					</tr>
+					<tr>
+						<td><a href="https://scipy.org/">SciPy</a></td>
+						<td><a href="https://colorcet.holoviz.org/">Colorcet</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://scikit-learn.org/">scikit-learn</a></td>
+						<td></td>
+					</tr>
+				</table>
+
+				<div class="wp-container-7 wp-block-buttons">
+					<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a
+							class="wp-block-button__link" href="https://github.com/lealiaxiong/caltech_covid19"
+							style="border-radius:13px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;"
+							target="_blank" rel="noreferrer noopener">View on GitHub</a></div>
+				</div>
+				<p style="text-align: center"><a
+						href="https://github.com/lealiaxiong/caltech_covid19">caltech_covid19</a>
+					is maintained by <a href="https://github.com/lealiaxiong">lealiaxiong</a>.</p>
+			</div>
+		</main>
+
+		<div class="site-footer-container wp-block-template-part">
+			<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+			<div style="height:120px" aria-hidden="true" class="wp-block-spacer"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>

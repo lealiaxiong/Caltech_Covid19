@@ -1,0 +1,646 @@
+date,case,affiliation
+4/23/20,1,graduate students
+6/9/20,1,campus employees
+6/29/20,1,campus employees
+7/6/20,1,campus employees
+7/7/20,1,campus employees
+7/10/20,1,campus employees
+7/12/20,1,campus employees
+7/14/20,1,campus employees
+7/20/20,1,campus employees
+7/21/20,1,campus employees
+7/26/20,1,campus employees
+7/28/20,3,campus employees
+7/30/20,1,CCC employees
+7/31/20,1,campus employees
+8/3/20,2,CCC employees
+8/10/20,1,graduate students
+8/19/20,1,campus employees
+8/26/20,1,campus employees
+9/14/20,1,campus employees
+10/8/20,1,campus employees
+10/22/20,1,campus employees
+10/25/20,3,CCC employees
+11/9/20,1,CCC employees
+11/9/20,1,campus employees
+11/12/20,1,campus employees
+11/18/20,2,campus employees
+11/20/20,1,campus employees
+11/23/20,1,campus employees
+11/24/20,1,graduate students
+11/30/20,2,campus employees
+12/1/20,3,campus employees
+12/2/20,4,campus employees
+12/3/20,1,CCC employees
+12/7/20,3,campus employees
+12/8/20,1,campus employees
+12/8/20,1,graduate students
+12/9/20,4,campus employees
+12/9/20,1,graduate students
+12/10/20,8,campus employees
+12/11/20,3,campus employees
+12/11/20,1,undergraduate students
+12/14/20,9,campus employees
+12/14/20,1,postdocs
+12/14/20,1,faculty
+12/14/20,2,graduate students
+12/16/20,6,campus employees
+12/17/20,2,campus employees
+12/18/20,1,campus employees
+12/22/20,2,campus employees
+12/22/20,1,off-campus employees
+12/23/20,2,campus employees
+12/23/20,2,postdocs
+12/28/20,3,campus employees
+12/28/20,1,graduate students
+12/30/20,2,campus employees
+12/30/20,1,faculty
+1/4/21,4,campus employees
+1/4/21,1,graduate students
+1/4/21,1,postdocs
+1/5/21,6,campus employees
+1/5/21,1,graduate students
+1/6/21,3,campus employees
+1/7/21,8,campus employees
+1/7/21,2,graduate students
+1/8/21,6,campus employees
+1/8/21,1,graduate students
+1/11/21,8,campus employees
+1/11/21,1,graduate students
+1/12/21,1,campus employees
+1/12/21,3,graduate students
+1/13/21,1,campus employees
+1/14/21,2,campus employees
+1/14/21,1,graduate students
+1/19/21,3,campus employees
+1/19/21,1,graduate students
+1/20/21,1,campus employees
+1/20/21,1,graduate students
+1/21/21,3,campus employees
+1/21/21,1,graduate students
+1/25/21,1,graduate students
+1/25/21,1,off-campus employees
+1/26/21,1,campus employees
+1/27/21,1,campus employees
+2/8/21,1,campus employees
+2/10/21,1,campus employees
+2/11/21,1,campus employees
+2/12/21,1,campus employees
+2/16/21,1,graduate students
+2/26/21,1,campus employees
+3/8/21,1,graduate students
+3/8/21,1,campus employees
+3/11/21,1,campus employees
+3/16/21,1,campus employees
+3/22/21,1,postdocs
+3/22/21,1,graduate students
+3/23/21,1,campus employees
+3/29/21,1,campus employees
+4/2/21,1,campus employees
+4/9/21,1,off-campus employees
+4/12/21,1,campus employees
+4/14/21,1,students
+4/20/21,1,campus employees
+4/28/21,2,campus employees
+5/12/21,1,campus employees
+6/30/21,1,campus employees
+7/13/21,1,postdocs
+7/15/21,1,off-campus employees
+7/19/21,1,graduate students
+7/20/21,1,campus employees
+7/26/21,1,campus employees
+7/26/21,1,graduate students
+7/28/21,1,campus employees
+7/30/21,1,off-campus employees
+8/2/21,2,campus employees
+8/2/21,1,off-campus employees
+8/3/21,1,campus employees
+8/4/21,2,campus employees
+8/4/21,1,off-campus employees
+8/6/21,1,campus employees
+8/6/21,1,external affiliates
+8/9/21,2,campus employees
+8/9/21,1,off-campus employees
+8/9/21,1,graduate students
+8/10/21,1,graduate students
+8/11/21,1,campus employees
+8/13/21,1,graduate students
+8/16/21,1,campus employees
+8/17/21,1,undergraduate students
+8/17/21,1,campus employees
+8/18/21,1,campus employees
+8/19/21,1,off-campus employees
+8/23/21,1,off-campus employees
+8/24/21,1,undergraduate students
+8/24/21,1,graduate students
+8/25/21,1,undergraduate students
+8/25/21,1,campus employees
+8/26/21,1,undergraduate students
+8/31/21,1,undergraduate students
+8/31/21,2,campus employees
+9/1/21,1,graduate students
+9/1/21,1,campus employees
+9/2/21,1,graduate students
+9/3/21,1,graduate students
+9/3/21,1,campus employees
+9/7/21,1,graduate students
+9/7/21,1,campus employees
+9/8/21,1,campus employees
+9/10/21,1,graduate students
+9/10/21,1,campus employees
+9/10/21,1,off-campus employees
+9/13/21,2,campus employees
+9/16/21,1,campus employees
+9/17/21,2,campus employees
+10/4/21,2,graduate students
+10/12/21,1,graduate students
+10/13/21,1,campus employees
+10/14/21,1,off-campus employees
+10/15/21,1,undergraduate students
+10/20/21,1,campus employees
+10/21/21,1,campus employees
+10/21/21,1,graduate students
+10/25/21,1,campus employees
+10/26/21,1,campus employees
+10/27/21,1,campus employees
+11/8/21,2,campus employees
+11/10/21,1,graduate students
+11/16/21,1,campus employees
+11/22/21,1,campus employees
+11/23/21,1,campus employees
+11/24/21,1,off-campus employees
+11/29/21,1,graduate students
+11/30/21,2,graduate students
+12/3/21,1,graduate students
+12/15/21,1,graduate students
+12/17/21,1,campus employees
+12/20/21,2,campus employees
+12/20/21,1,undergraduate students
+12/21/21,3,campus employees
+12/21/21,2,graduate students
+12/22/21,2,campus employees
+12/22/21,2,undergraduate students
+12/23/21,2,undergraduate students
+12/23/21,2,campus employees
+12/28/21,2,undergraduate students
+12/28/21,2,graduate students
+12/28/21,8,employees
+12/30/21,8,employees
+12/30/21,13,undergraduate students
+12/30/21,5,graduate students
+1/4/22,34,undergraduate students
+1/4/22,18,graduate students
+1/4/22,40,employees
+1/5/22,22,undergraduate students
+1/5/22,19,graduate students
+1/5/22,15,employees
+1/6/22,7,undergraduate students
+1/6/22,2,graduate students
+1/6/22,5,employees
+1/7/22,2,undergraduate students
+1/7/22,3,graduate students
+1/7/22,12,employees
+1/10/22,19,undergraduate students
+1/10/22,9,graduate students
+1/10/22,65,employees
+1/11/22,7,employees
+1/12/22,5,graduate students
+1/12/22,4,undergraduate students
+1/12/22,11,employees
+1/13/22,3,undergraduate students
+1/13/22,3,graduate students
+1/13/22,8,employees
+1/14/22,3,undergraduate students
+1/14/22,4,graduate students
+1/14/22,7,employees
+1/18/22,4,undergraduate students
+1/18/22,3,graduate students
+1/18/22,13,employees
+1/19/22,2,undergraduate students
+1/19/22,1,graduate students
+1/19/22,9,employees
+1/20/22,2,undergraduate students
+1/20/22,5,graduate students
+1/20/22,9,employees
+1/21/22,2,undergraduate students
+1/21/22,2,graduate students
+1/21/22,14,employees
+1/24/22,1,undergraduate students
+1/24/22,6,graduate students
+1/24/22,12,employees
+1/25/22,1,graduate students
+1/25/22,3,employees
+1/26/22,1,undergraduate students
+1/26/22,2,graduate students
+1/26/22,7,employees
+1/27/22,5,employees
+1/28/22,1,undergraduate students
+1/28/22,1,graduate students
+1/28/22,7,employees
+1/31/22,9,employees
+2/2/22,1,graduate students
+2/2/22,1,employees
+2/3/22,2,employees
+2/4/22,1,undergraduate students
+2/4/22,1,graduate students
+2/7/22,1,undergraduate students
+2/7/22,2,graduate students
+2/7/22,6,employees
+2/9/22,2,employees
+2/10/22,3,graduate students
+2/10/22,2,undergraduate students
+2/10/22,5,employees
+2/11/22,1,graduate students
+2/11/22,2,employees
+2/14/22,1,graduate students
+2/14/22,3,employees
+2/15/22,2,graduate students
+2/17/22,1,employees
+2/18/22,2,employees
+2/22/22,1,employees
+2/23/22,1,employees
+2/25/22,2,graduate students
+2/25/22,3,undergraduate students
+2/25/22,1,employees
+2/28/22,1,employees
+3/1/22,1,students
+3/2/22,1,students
+3/7/22,2,employees
+3/9/22,2,students
+3/9/22,1,employees
+3/10/22,1,employees
+3/11/22,1,students
+3/14/22,2,students
+3/14/22,1,employees
+3/15/22,1,employees
+3/16/22,3,students
+3/16/22,1,employees
+3/17/22,2,students
+3/18/22,1,students
+3/21/22,1,graduate students
+3/21/22,1,employees
+3/23/22,1,employees
+3/25/22,1,undergraduate students
+3/25/22,1,employees
+3/28/22,8,students
+3/28/22,2,employees
+3/29/22,1,employees
+3/30/22,3,students
+3/31/22,5,students
+4/1/22,2,students
+4/1/22,1,employees
+4/4/22,2,students
+4/4/22,4,employees
+4/5/22,1,students
+4/5/22,1,employees
+4/6/22,1,students
+4/7/22,4,students
+4/7/22,2,employees
+4/8/22,2,students
+4/8/22,2,employees
+4/11/22,6,students
+4/11/22,2,employees
+4/12/22,2,employees
+4/13/22,6,students
+4/13/22,1,employees
+4/14/22,5,students
+4/15/22,6,students
+4/18/22,5,students
+4/18/22,2,employees
+4/19/22,3,employees
+4/20/22,6,students
+4/21/22,12,students
+4/21/22,2,employees
+4/22/22,7,undergraduate students
+4/25/22,3,graduate students
+4/25/22,9,undergraduate students
+4/26/22,2,undergraduate students
+4/26/22,2,employees
+4/27/22,3,undergraduate students
+4/27/22,1,graduate students
+4/28/22,2,undergraduate students
+4/28/22,5,graduate students
+4/28/22,3,employees
+4/29/22,4,undergraduate students
+4/29/22,1,graduate students
+4/29/22,2,employees
+5/2/22,1,undergraduate students
+5/2/22,7,employees
+5/3/22,2,employees
+5/4/22,3,graduate students
+5/4/22,5,employees
+5/5/22,1,graduate students
+5/6/22,2,graduate students
+5/6/22,2,employees
+5/9/22,1,graduate students
+5/9/22,6,employees
+5/10/22,1,graduate students
+5/10/22,1,employees
+5/11/22,1,graduate students
+5/11/22,2,undergraduate students
+5/11/22,2,employees
+5/12/22,3,employees
+5/13/22,3,graduate students
+5/13/22,3,employees
+5/16/22,2,graduate students
+5/16/22,3,undergraduate students
+5/16/22,8,employees
+5/17/22,1,graduate students
+5/17/22,4,undergraduate students
+5/17/22,4,employees
+5/18/22,5,graduate students
+5/18/22,2,undergraduate students
+5/18/22,5,employees
+5/19/22,6,graduate students
+5/19/22,3,undergraduate students
+5/19/22,9,employees
+5/20/22,5,graduate students
+5/20/22,2,undergraduate students
+5/20/22,6,employees
+5/23/22,3,graduate students
+5/23/22,2,undergraduate students
+5/23/22,2,employees
+5/24/22,18,graduate students
+5/24/22,2,undergraduate students
+5/24/22,3,employees
+5/25/22,19,graduate students
+5/26/22,17,graduate students
+5/26/22,1,undergraduate students
+5/26/22,3,employees
+5/27/22,4,graduate students
+5/27/22,5,undergraduate students
+5/27/22,3,employees
+5/31/22,4,graduate students
+5/31/22,22,undergraduate students
+5/31/22,8,employees
+6/1/22,2,graduate students
+6/1/22,14,undergraduate students
+6/1/22,5,employees
+6/2/22,9,graduate students
+6/2/22,11,undergraduate students
+6/2/22,11,employees
+6/3/22,2,graduate students
+6/3/22,8,undergraduate students
+6/3/22,6,employees
+6/6/22,4,graduate students
+6/6/22,5,undergraduate students
+6/6/22,10,employees
+6/7/22,1,graduate students
+6/7/22,3,undergraduate students
+6/7/22,4,employees
+6/8/22,4,graduate students
+6/8/22,4,undergraduate students
+6/8/22,9,employees
+6/9/22,3,graduate students
+6/9/22,2,undergraduate students
+6/9/22,4,employees
+6/10/22,3,graduate students
+6/10/22,3,undergraduate students
+6/10/22,7,employees
+6/13/22,6,graduate students
+6/13/22,3,undergraduate students
+6/13/22,7,employees
+6/14/22,4,graduate students
+6/14/22,9,employees
+6/15/22,6,graduate students
+6/15/22,7,undergraduate students
+6/15/22,7,employees
+6/16/22,6,graduate students
+6/16/22,7,undergraduate students
+6/16/22,9,employees
+6/17/22,2,graduate students
+6/17/22,3,undergraduate students
+6/17/22,6,employees
+6/21/22,9,graduate students
+6/21/22,9,undergraduate students
+6/21/22,16,employees
+6/22/22,3,graduate students
+6/22/22,2,undergraduate students
+6/22/22,13,employees
+6/23/22,7,graduate students
+6/23/22,6,undergraduate students
+6/23/22,8,employees
+6/24/22,3,graduate students
+6/24/22,3,undergraduate students
+6/24/22,10,employees
+6/27/22,6,graduate students
+6/27/22,8,undergraduate students
+6/27/22,19,employees
+6/28/22,4,graduate students
+6/28/22,1,undergraduate students
+6/28/22,8,employees
+6/29/22,3,graduate students
+6/29/22,1,undergraduate students
+6/29/22,12,employees
+6/30/22,3,graduate students
+6/30/22,2,undergraduate students
+6/30/22,8,employees
+7/5/22,11,graduate students
+7/5/22,3,undergraduate students
+7/5/22,28,employees
+7/6/22,7,graduate students
+7/6/22,13,employees
+7/7/22,6,graduate students
+7/7/22,17,employees
+7/8/22,4,graduate students
+7/8/22,1,undergraduate students
+7/8/22,10,employees
+7/11/22,8,graduate students
+7/11/22,2,undergraduate students
+7/11/22,17,employees
+7/12/22,3,graduate students
+7/12/22,8,employees
+7/13/22,4,graduate students
+7/13/22,2,undergraduate students
+7/13/22,6,employees
+7/14/22,3,graduate students
+7/14/22,3,undergraduate students
+7/14/22,3,employees
+7/15/22,2,graduate students
+7/15/22,1,undergraduate students
+7/15/22,7,employees
+7/18/22,5,graduate students
+7/18/22,2,undergraduate students
+7/18/22,10,employees
+7/19/22,3,graduate students
+7/19/22,7,employees
+7/20/22,4,graduate students
+7/20/22,2,undergraduate students
+7/20/22,10,employees
+7/21/22,2,graduate students
+7/21/22,2,undergraduate students
+7/21/22,8,employees
+7/22/22,3,undergraduate students
+7/22/22,7,employees
+7/25/22,4,graduate students
+7/25/22,2,undergraduate students
+7/25/22,18,employees
+7/26/22,3,graduate students
+7/26/22,12,employees
+7/27/22,5,graduate students
+7/27/22,1,undergraduate students
+7/27/22,12,employees
+7/28/22,2,graduate students
+7/28/22,3,undergraduate students
+7/28/22,7,employees
+7/29/22,1,undergraduate students
+7/29/22,11,employees
+8/1/22,4,graduate students
+8/1/22,7,employees
+8/2/22,1,employees
+8/3/22,4,employees
+8/4/22,10,employees
+8/4/22,1,students
+8/5/22,4,employees
+8/5/22,3,students
+8/8/22,8,employees
+8/8/22,3,students
+8/9/22,5,employees
+8/9/22,3,students
+8/10/22,5,employees
+8/10/22,4,students
+8/11/22,5,employees
+8/11/22,1,students
+8/12/22,7,employees
+8/12/22,1,students
+8/15/22,6,employees
+8/15/22,2,students
+8/16/22,3,employees
+8/16/22,4,students
+8/17/22,7,employees
+8/17/22,2,students
+8/18/22,8,employees
+8/18/22,5,students
+8/19/22,4,employees
+8/19/22,1,students
+8/22/22,4,employees
+8/22/22,3,students
+8/23/22,7,employees
+8/23/22,3,students
+8/24/22,3,employees
+8/24/22,2,students
+8/25/22,2,employees
+8/26/22,3,employees
+8/29/22,5,employees
+8/30/22,2,employees
+8/31/22,3,employees
+9/1/22,4,employees
+9/1/22,3,students
+9/2/22,2,employees
+9/2/22,1,students
+9/6/22,12,employees
+9/6/22,4,students
+9/7/22,4,employees
+9/7/22,5,students
+9/8/22,3,employees
+9/8/22,2,students
+9/9/22,3,employees
+9/9/22,1,students
+9/12/22,4,employees
+9/12/22,2,students
+9/13/22,2,employees
+9/14/22,2,employees
+9/14/22,1,students
+9/15/22,1,employees
+9/16/22,3,employees
+9/16/22,1,students
+9/19/22,3,employees
+9/19/22,4,students
+9/20/22,4,employees
+9/20/22,3,students
+9/21/22,3,employees
+9/21/22,2,students
+9/22/22,3,employees
+9/23/22,4,employees
+9/23/22,2,students
+9/26/22,3,employees
+9/26/22,6,students
+9/27/22,1,employees
+9/28/22,5,employees
+9/28/22,2,students
+9/29/22,2,employees
+9/29/22,1,students
+9/30/22,2,employees
+9/30/22,3,students
+10/3/22,6,employees
+10/3/22,3,students
+10/4/22,2,employees
+10/5/22,3,employees
+10/5/22,4,students
+10/6/22,2,employees
+10/6/22,4,students
+10/7/22,1,employees
+10/7/22,3,students
+10/10/22,2,employees
+10/10/22,4,students
+10/11/22,6,employees
+10/12/22,5,employees
+10/13/22,2,employees
+10/14/22,2,employees
+10/14/22,2,students
+10/17/22,1,employees
+10/17/22,2,students
+10/18/22,1,students
+10/19/22,4,employees
+10/20/22,1,employees
+10/21/22,1,employees
+10/24/22,2,employees
+10/24/22,2,students
+10/25/22,2,employees
+10/25/22,1,students
+10/26/22,1,employees
+10/26/22,1,students
+10/27/22,2,employees
+10/27/22,1,students
+10/28/22,2,employees
+10/28/22,1,students
+10/31/22,3,employees
+10/31/22,1,students
+11/1/22,1,employees
+11/1/22,1,students
+11/3/22,3,students
+11/4/22,2,employees
+11/4/22,2,students
+11/7/22,4,employees
+11/8/22,1,employees
+11/9/22,2,employees
+11/9/22,3,students
+11/10/22,3,employees
+11/10/22,2,students
+11/11/22,1,students
+11/14/22,8,employees
+11/14/22,1,students
+11/15/22,4,employees
+11/15/22,2,students
+11/16/22,2,employees
+11/16/22,4,students
+11/17/22,2,employees
+11/17/22,3,students
+11/18/22,3,employees
+11/18/22,4,students
+11/21/22,7,employees
+11/21/22,6,students
+11/22/22,1,employees
+11/22/22,7,students
+11/23/22,5,employees
+11/23/22,3,students
+11/28/22,16,employees
+11/28/22,8,students
+11/29/22,9,employees
+11/29/22,11,students
+11/30/22,12,employees
+11/30/22,11,students
+12/1/22,9,employees
+12/1/22,17,students
+12/2/22,6,employees
+12/2/22,16,students
+12/5/22,4,employees
+12/5/22,9,students
+12/6/22,4,employees
+12/6/22,7,students
+12/7/22,5,employees
+12/7/22,2,students
+12/8/22,6,employees
+12/8/22,4,students
+12/9/22,1,employees
+12/9/22,2,students
